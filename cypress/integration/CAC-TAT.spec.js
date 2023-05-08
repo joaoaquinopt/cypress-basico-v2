@@ -133,7 +133,7 @@ describe('Central de Atendimento ao Cliente TAT', () => {
             .should('not.be.checked')  
     })
 
-    it.skip('seleciona um arquivo da pasta fixtures', () => {
+    it('seleciona um arquivo da pasta fixtures', () => {
         cy.get('input[type="file"]')
             .selectFile('cypress/fixtures/example.json').then( input => {
                 expect(input[0].files[0].name).to.eql('example.json')
